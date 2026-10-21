@@ -1,0 +1,4 @@
+﻿product_id,name,description,price,price_raw,currency,sku_retailer_id,availability,is_hidden,review_status,image_url,product_url,collection
+8800123456789012,Cotton Kurti - Blue,"Handloom cotton, sizes S-XXL.
+Free shipping over 999.",499.00,499000,INR,KURTI-BLU-001,in stock,false,APPROVED,https://example.com/kurti.jpg,https://wa.me/p/8800123456789012/919876543210,
+8800123456789013,"Notebook, A5 (Pack of 3)","200 pages, ruled",199.00,199000,INR,NB-A5-3,in stock,false,APPROVED,https://example.com/notebook.jpg,https://wa.me/p/8800123456789013/919876543210,

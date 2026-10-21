@@ -1,0 +1,5 @@
+node_modules/
+auth/
+*.csv
+!sample-output.csv
+.DS_Store
