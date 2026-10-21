@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WhatsApp Catalog to CSV Exporter — Free Tool | Zobixa AI</title>
+<meta name="description" content="Free, open-source tool to export any public WhatsApp Business catalog to a CSV file: product names, prices, descriptions, SKUs, image links and product links. Download from GitHub and run it in minutes.">
+<link rel="canonical" href="https://zobixa.github.io/whatsapp-tools/">
+<meta property="og:title" content="WhatsApp Catalog to CSV Exporter — Free Tool">
+<meta property="og:description" content="Export any public WhatsApp Business catalog to CSV: names, prices, descriptions, SKUs, images and product links. Free and open source.">
+<meta property="og:type" content="website">
+<style>
+  :root{
+    --green:#25d366; --green-dark:#128c7e; --ink:#14201a; --muted:#5b6b62;
+    --bg:#f6f8f7; --card:#ffffff; --line:#e2eae5; --code-bg:#0f1f18;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+  .wrap{max-width:920px;margin:0 auto;padding:0 20px}
+  header{padding:18px 0;display:flex;justify-content:space-between;align-items:center}
+  .brand{font-weight:800;font-size:20px;color:var(--ink);text-decoration:none}
+  .brand span{color:var(--green-dark)}
+  .gh{color:var(--ink);text-decoration:none;font-weight:600;border:1px solid var(--line);padding:8px 14px;border-radius:999px;background:var(--card)}
+  .hero{text-align:center;padding:56px 0 40px}
+  .badge{display:inline-block;background:#e7f9ef;color:var(--green-dark);font-weight:700;font-size:13px;padding:5px 12px;border-radius:999px}
+  h1{font-size:42px;line-height:1.15;margin:18px 0 14px}
+  .lede{font-size:18px;color:var(--muted);max-width:640px;margin:0 auto 28px}
+  .cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .btn{display:inline-block;padding:14px 26px;border-radius:12px;text-decoration:none;font-weight:700;font-size:16px}
+  .btn-main{background:var(--green);color:#06351c}
+  .btn-ghost{background:var(--card);color:var(--ink);border:1px solid var(--line)}
+  section{padding:34px 0}
+  h2{font-size:27px;margin:0 0 8px}
+  .sub{color:var(--muted);margin:0 0 22px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+  .card h3{margin:0 0 6px;font-size:17px}
+  .card p{margin:0;color:var(--muted);font-size:15px}
+  .num{display:inline-flex;width:30px;height:30px;border-radius:50%;background:var(--green);color:#06351c;font-weight:800;align-items:center;justify-content:center;margin-bottom:10px}
+  pre{background:var(--code-bg);color:#d9f5e4;padding:18px 20px;border-radius:14px;overflow-x:auto;font-size:14px;line-height:1.7}
+  table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);font-size:15px}
+  th{background:#eef4f0}
+  tr:last-child td{border-bottom:none}
+  .warn{background:#fff8e8;border:1px solid #f0dfae;border-radius:14px;padding:18px 20px}
+  .warn h3{margin:0 0 6px}
+  .warn p{margin:0;color:#5c4d1e}
+  details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:10px}
+  summary{font-weight:700;cursor:pointer}
+  details p{color:var(--muted);margin:8px 0 0}
+  footer{padding:34px 0 44px;color:var(--muted);font-size:14px;text-align:center}
+  footer a{color:var(--green-dark)}
+  @media (max-width:560px){h1{font-size:32px}}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "WhatsApp Catalog to CSV Exporter",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Windows, macOS, Linux",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "url": "https://github.com/zobixa/whatsapp-tools",
+  "author": { "@type": "Organization", "name": "Zobixa AI" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"How do I export a WhatsApp catalog to CSV?","acceptedAnswer":{"@type":"Answer","text":"Download the free tool from GitHub, run npm install, then run it with the shop's number or wa.me/c/ link. Scan the QR code once with your WhatsApp, and it saves the whole catalog as a CSV file."}},
+    {"@type":"Question","name":"Can I export someone else's WhatsApp catalog?","acceptedAnswer":{"@type":"Answer","text":"Yes, if the catalog is public. WhatsApp Business catalogs are made to be browsed by customers, and this tool reads them the same way the WhatsApp app does, after you pair your own WhatsApp."}},
+    {"@type":"Question","name":"Is there an online version that works without installing anything?","acceptedAnswer":{"@type":"Answer","text":"No honest one. WhatsApp has no public no-login catalog API, so any site promising instant exports is running paired WhatsApp accounts behind the scenes. This tool runs on your own machine with your own login instead."}},
+    {"@type":"Question","name":"Is this tool free?","acceptedAnswer":{"@type":"Answer","text":"Yes. It is open source under the MIT license on GitHub. There are no accounts, limits or paid tiers."}},
+    {"@type":"Question","name":"Can my WhatsApp number get banned for using it?","acceptedAnswer":{"@type":"Answer","text":"The tool uses an unofficial client (Baileys), which is against WhatsApp's terms. Low-volume use is usually fine, but a ban is possible, so pair a spare number rather than your main one."}}
+  ]
+}
+</script>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <a class="brand" href="https://github.com/zobixa/whatsapp-tools">Zobixa <span>AI</span></a>
+    <a class="gh" href="https://github.com/zobixa/whatsapp-tools">View on GitHub</a>
+  </header>
+
+  <div class="hero">
+    <span class="badge">Free &amp; open source</span>
+    <h1>WhatsApp Catalog to CSV Exporter</h1>
+    <p class="lede">Export any public WhatsApp Business catalog into a clean CSV file — product names, prices, descriptions, SKUs, image links and product links — in one run. No manual copying from the app, no paid scraper.</p>
+    <div class="cta">
+      <a class="btn btn-main" href="https://github.com/zobixa/whatsapp-tools/archive/refs/heads/main.zip">Download the tool (ZIP)</a>
+      <a class="btn btn-ghost" href="https://github.com/zobixa/whatsapp-tools/blob/main/sample-output.csv">See a sample CSV</a>
+    </div>
+  </div>
+
+  <section>
+    <h2>How it works</h2>
+    <p class="sub">You need Node.js 18+ and a WhatsApp account to pair (a spare number is recommended — see the honest notes below).</p>
+    <div class="grid">
+      <div class="card"><span class="num">1</span><h3>Download &amp; install</h3><p>Download the ZIP from GitHub, unzip it, and run one install command. Takes about a minute.</p></div>
+      <div class="card"><span class="num">2</span><h3>Pair your WhatsApp</h3><p>The first run shows a QR code in your terminal. Scan it with WhatsApp &gt; Linked Devices, exactly like WhatsApp Web. You only scan once.</p></div>
+      <div class="card"><span class="num">3</span><h3>Run it on any shop</h3><p>Give it a number or a <em>wa.me/c/</em> catalog link. It fetches the whole catalog, page by page, and writes your CSV.</p></div>
+    </div>
+    <pre>npm install
+npm start -- 919876543210
+# or: npm start -- "https://wa.me/c/919876543210"
+# result: catalog-919876543210.csv</pre>
+  </section>
+
+  <section>
+    <h2>What you get in the CSV</h2>
+    <p class="sub">One row per product, ready to open in Excel or Google Sheets (the file is UTF-8, so prices, emoji and non-English names show correctly).</p>
+    <table>
+      <tr><th>Column</th><th>What it is</th></tr>
+      <tr><td>name, description</td><td>Product title and full description text</td></tr>
+      <tr><td>price, currency</td><td>Catalog price, formatted (e.g. 499.00 INR), plus the raw value WhatsApp sent</td></tr>
+      <tr><td>sku_retailer_id</td><td>The shop's own SKU / retailer ID, if they set one</td></tr>
+      <tr><td>image_url</td><td>Direct link to the product image</td></tr>
+      <tr><td>product_url</td><td>The product's shareable wa.me/p/ link</td></tr>
+      <tr><td>availability, collection</td><td>Stock status and which catalog collection the product belongs to</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>What people use it for</h2>
+    <div class="grid">
+      <div class="card"><h3>Move a shop to a website</h3><p>Export a catalog once, then import the CSV into Shopify, WooCommerce or your own site instead of re-typing every product.</p></div>
+      <div class="card"><h3>Price &amp; competitor research</h3><p>Get a competitor's or supplier's public catalog into a spreadsheet where you can sort, filter and compare prices properly.</p></div>
+      <div class="card"><h3>Backup your own catalog</h3><p>Keep a spreadsheet copy of your products so a phone change or account problem never wipes out your price list.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="warn">
+      <h3>The honest notes (read before you run it)</h3>
+      <p>WhatsApp has <strong>no public, no-login catalog API</strong> — that's why this tool pairs with your WhatsApp instead of working as an instant online form, and why you should be suspicious of sites that promise otherwise. It uses an unofficial client (Baileys), which is against WhatsApp's terms: low-volume use is usually fine, but the paired number <strong>can</strong> get banned, so pair a spare number, not your main one. Only export catalogs you have a legitimate reason to use, and respect the shop owner's rights in their product data and images. Exporting <em>your own</em> catalog? The tool also includes an official Meta Graph API mode with no pairing and no ban risk.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>FAQ</h2>
+    <details><summary>How do I export a WhatsApp catalog to CSV?</summary><p>Download the free tool from GitHub, run <strong>npm install</strong>, then run it with the shop's number or wa.me/c/ link. Scan the QR code once with your WhatsApp, and it saves the whole catalog as a CSV file.</p></details>
+    <details><summary>Can I export someone else's WhatsApp catalog?</summary><p>Yes, if the catalog is public. WhatsApp Business catalogs are made to be browsed by customers, and this tool reads them the same way the WhatsApp app does, after you pair your own WhatsApp.</p></details>
+    <details><summary>Is there an online version that works without installing anything?</summary><p>No honest one. WhatsApp has no public no-login catalog API, so any site promising instant exports is running paired WhatsApp accounts behind the scenes. This tool runs on your own machine with your own login instead.</p></details>
+    <details><summary>Is this tool free?</summary><p>Yes. It's open source under the MIT license on GitHub — no accounts, no limits, no paid tiers.</p></details>
+    <details><summary>Can my WhatsApp number get banned for using it?</summary><p>The tool uses an unofficial client (Baileys), which is against WhatsApp's terms. Low-volume use is usually fine, but a ban is possible, so pair a spare number rather than your main one.</p></details>
+  </section>
+
+  <div class="hero" style="padding-top:10px">
+    <h2 style="font-size:30px">Get the exporter</h2>
+    <p class="lede">Free forever, MIT licensed. Star the repo on GitHub if it saves you an afternoon of copying.</p>
+    <div class="cta">
+      <a class="btn btn-main" href="https://github.com/zobixa/whatsapp-tools">Get it on GitHub</a>
+    </div>
+  </div>
+
+  <footer>
+    Built by <a href="https://github.com/zobixa">Zobixa AI</a> · <a href="https://github.com/zobixa/whatsapp-tools">whatsapp-tools on GitHub</a> · Not affiliated with WhatsApp or Meta.
+  </footer>
+
+</div>
+</body>
+</html>
